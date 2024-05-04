@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: tpcds
+    description: TPC-DS models any industry that must manage, sell and distribute products.
+    database: dbt-poc-2024
+    schema: raw_tpcds_data
+    tables:
+      - name: customer
+        description: Each row in this dimension table represents a customer.
+        meta:
+          data_quality: "bronze"
